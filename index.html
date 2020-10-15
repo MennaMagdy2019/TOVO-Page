@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!---------------------Header------------------>
+    <header class="container">
+        <div class="navigation container" style="order: 1;" id="topmenu">   
+            <div class="col-3 " >
+                <h5 >T<span>O</span>V<span>O</span></h5>
+            </div>
+            <div >
+                <ul class="list" id="menu" >
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">ScreenShot</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li onclick="dropdown()" class="dropdown" ><a href="#">Blog</a><i class="fa fa-caret-down"></i> <ul style="z-index: 5;" class="dropdown-menu"  id="dropDown">
+                        <li><a href="#">Blog List</a></li>
+                        <li><a href="#">Blog Details</a></li>
+                        <li><a href="#">LeftSidebar</a></li>
+                        <li><a href="#">RightSidebar</a></li>
+                        <li><a href="#">Details LeftSidebar</a></li>
+                        <li><a href="#">Details RightSidebar</a></li>
+                    </ul></li>
+                    <li><a href="#">Price</a></li>
+                    <li><a href="#">Contact Us</a></li>
+
+                    <li  onclick="dropdown1()" class="dropdown"  ><a href="#" >Other Page</a><i class="fa fa-caret-down"></i>
+                        <ul class="dropdown-menu" style="z-index: 5;" id="dropDown1">
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                            <li><a href="#">Forget Password</a></li>
+                            <li><a href="#">Thank You</a></li>
+                            <li><a href="#">Review</a></li>
+                            <li><a href="#">404</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Download</a></li>
+                            <li><a href="#">Coming Soon</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+               <div onclick="slideshow()" >
+                <a   href="#" class="mobile-icon" id="check-class"  ><img  src="images/bars.svg"  ></a>
+               </div>
+        </div>
+    </header>
+                    <!---------------------sidebar------------------>
+    <div class="sidebar" style="order:2">
+        <div class="container Rightsidebar">
+            <div class="col-5">
+                <h5>RIGHT<span>SIDERBAR</span></h5>
+            </div> 
+            <div class="col-5">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">blog</a></li>
+                    <P >Right Sidebar</P>
+                </ul>
+            </div>     
+        </div>    
+    </div>
+                       <!---------------------Ring------------------>
+    <div class="color" id="Ring" onclick="hide()">
+        <a href="#" class="ring-rotate">
+            <i class="fa fa-cog" id="cog"></i>
+        </a>
+    </div>
+    <div class="color-box" id="Colors">
+        <div class="change-color" id="select">
+            <h2>Select Color</h2>
+        </div>
+        <div  class="colors" >
+            <a onclick="changecolor('#17a2b8')"  id="color1"  href="#"></a>
+            <a onclick="changecolor('#20c997')"  id="color2"  href="#"></a>
+            <a onclick="changecolor('aqua')"  id="color3" href="#"></a>
+        </div>
+    </div>
+                     
+    <div class="container">
+        <div class="row" >
+                          <!---------------------col-6------------------>
+            <div class="col-6 row" >
+                   <div class="col-2">
+                        <div class="box1"> 
+                            <img src="images/pexels-photo-373076.jpeg" alt=" " width="100%" height="300px">                        
+                           <a href="#"> 
+                                    <h3>There Are Many Variation Of Passages</h3>
+                                    <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry Lorem</p>
+                                    <h4>Mark JKcno</h4>
+                            </a>  
+                        </div>
+                   </div>
+                   <div class="col-2">
+                    <div class="box1"> 
+                        <img src="images/pexels-photo-733852.jpeg" alt=" " width="100%" height="300px">                   
+                        <a href="#"> 
+                                <h3>There Are Many Variation Of Passages</h3>
+                                <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry Lorem</p>
+                                <h4>Mark JKcno</h4>
+                        </a>  
+                    </div>
+                   </div>
+                   <div class="col-2">
+                    <div class="box1"> 
+                        <img src="images/pexels-photo-461077.jpeg" alt=" " width="100%" height="300px">                    
+                        <a href="#"> 
+                                <h3>There Are Many Variation Of Passages</h3>
+                                <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry Lorem</p>
+                                <h4>Mark JKcno</h4>
+                        </a>  
+                    </div>
+                   </div>
+                   <div class="col-2">
+                    <div class="box1"> 
+                        <img src="images/pexels-photo-669615.jpeg" alt=" " width="100%" height="300px">                    
+                        <a href="#"> 
+                                <h3>There Are Many Variation Of Passages</h3>
+                                <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry Lorem</p>
+                                <h4>Mark JKcno</h4>
+                        </a>  
+                    </div>
+                   </div>
+                   <div class="col-2">
+                    <div class="box1"> 
+                        <img src="images/pexels-photo-165776.jpeg" alt=" " width="100%" height="300px">                   
+                        <a href="#"> 
+                                <h3>There Are Many Variation Of Passages</h3>
+                                <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry Lorem</p>
+                                <h4>Mark JKcno</h4>
+                        </a>  
+                    </div>
+                   </div>
+                   <div class="col-2">
+                    <div class="box1"> 
+                        <img src="images/pexels-photo-165776.jpeg" alt=" " width="100%" height="300px">                    
+                        <a href="#"> 
+                                <h3>There Are Many Variation Of Passages</h3>
+                                <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry Lorem</p>
+                                <h4>Mark JKcno</h4>
+                        </a>  
+                    </div>
+                   </div>      
+            </div> 
+                            <!---------------------col-3------------------>
+            <div class="col-3">
+               <div>
+                <h5>BLOG CATEGORY</h5>
+                <div>
+                    <ul>
+                        <li ><a onmouseover = "links()" class="colorspan" href="#"><i class="fa fa-angle-right"></i>Lorem Ipsum Is Simply</a></li>
+                        <li ><a  class="colorspan" href="#"><i class="fa fa-angle-right"></i>There Are Many Variation</a></li>
+                        <li ><a class="colorspan" href="#"><i class="fa fa-angle-right"></i>It Has Survived Not Only One</a></li>
+                        <li ><a class="colorspan" href="#"><i class="fa fa-angle-right"></i>Lorem Ipsum Has Been The</a></li>
+                        <li ><a  class="colorspan" href="#"><i class="fa fa-angle-right"></i>Lorem Ipsum Is Rondom</a></li>
+                    </ul>
+                </div>
+                <h5>POPULAR TAG</h5>
+                <div class="box" id="colorspan">
+                       <span >Responsive design</span><span >Color options</span>
+                       <span >Mutiple demos</span><span>Dedicted support</span>
+                       <span >Documentation</span><span >PSD is included</span>
+                       <span >Text</span><span >Support</span><span >Responsive</span><span>Design</span>
+                </div>               
+               </div>  
+               <h5>RECENT POST</h5>
+                        <div class="content" >
+                            <img src="images/pexels-photo-614810.jpeg" width="25%" height="80px" >
+                            <div class="about"> 
+                                <h4>Lorem Ipusm l...</h4>
+                                 <p>05 MARCH 2011 </p> 
+                            </div>                          
+                        </div>
+                        <div class="content">
+                            <img src="images/pexels-photo-1037915.jpeg" width="25%" height="80px" >
+                            <div class="about"> 
+                                <h4>Lorem Ipusm l...</h4>
+                                 <p>05 MARCH 2011 </p> 
+                            </div>
+                        </div>
+                        <div class="content">
+                            <img src="images/pexels-photo-936229.jpeg" width="25%" height="80px" >
+                            <div class="about"> 
+                                <h4>Lorem Ipusm l...</h4>
+                                 <p>05 MARCH 2011 </p> 
+                            </div>
+                        </div>
+                   
+                    </div>                      
+               </div>      
+        </div>   
+    </div>
+    <footer >
+        <div class="boxx container" class="container">
+            <h4 >A2018- 19 Copyright &copy; Powered By Company Name</h4>
+        </div>
+    </footer>
+    <script src="js/script.js" >
+    </script>
+</body>
+
+</html>

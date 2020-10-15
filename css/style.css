@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+}
+.container {
+    position: relative;
+    width: 1220px;
+    margin: auto;
+    padding: 20px;
+}
+:root{
+    --gray:#6c757d;
+    --gray-dark:#343a40;
+    --light:#f8f9fa;
+    --teal:aqua;
+    --black:#212529;
+}
+             /************* Header**********/
+header{
+    background-color: white;
+    padding: 20px 0;
+    
+}
+header .navigation  {
+    display: flex;
+    font-weight: bold;
+    font-size: 14px;
+}
+.navigation .col-3{flex: 0 0 30%;}
+header .navigation .col-3 h5   {
+    font-weight: 400;
+    font-size: 50px; 
+}
+header .navigation .col-3 h5 span   {
+    font-weight: bold;
+    font-size: 50px;
+}
+header .navigation ul  {
+   display: flex;
+   justify-content: flex-end;
+   flex-wrap: wrap;
+   align-items: center;
+   margin-top: 20px;
+}
+header .navigation ul li  {
+   padding-left:20px; 
+   position: relative;
+}
+header .navigation ul li a {
+    padding-top: 0px;
+    color: var(--gray);
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.fa {
+cursor: pointer;
+padding-left: 5px;
+color: var(--gray-dark);
+}
+header .navigation ul li:hover a 
+,header .navigation ul .dropdown:hover
+ , header .navigation ul .dropdown .dropdown-menu li a:hover
+  , .row .col-3 ul li:hover a {
+  color: var(--teal)
+}
+header .navigation ul .dropdown .dropdown-menu li a{
+color: var(--gray);
+}
+header .navigation ul ul {
+    position: absolute;
+    padding: 5px;
+    display: none;
+    left: 0;
+    top: 100%;
+    min-width: 200px;
+}
+header .navigation ul ul li {
+    position: relative;
+    padding: 10px 2px;
+}
+header .navigation ul ul li a {font-size: 14px;}
+header .navigation ul li:hover ul {
+    display: block;
+    background-color: white;
+    color: var(--teal);
+    
+}
+header .navigation ul ul li:hover a {display: block;}
+header .navigation .mobile-icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 6px;
+    margin-top: 15px;
+    display: none;
+    transition: all 500ms ease-in-out;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    opacity: 0;
+    animation: fadeIn 1s ease-in both;
+    background-color: white;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(0 , -20% , 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0 , 0 ,0);
+    }
+}
+                  /************* sidebar**********/
+.sidebar{
+    background-color: darkgray;
+    height: 100px;
+    display: flex;
+}
+.Rightsidebar{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-5{
+    flex: 0 0 50%;
+}
+.sidebar ul{
+    display: flex;
+   justify-content: flex-end;
+   margin-right: 20px;
+   margin-top: 10px;
+}
+.sidebar ul li ::after {
+   content: " / ";
+   padding: 10px;
+   color: var(--gray-dark);
+ 
+ }
+.sidebar .col-5 h5{
+    font-weight: 100;
+    font-size:40px;
+ }
+  .sidebar .col-5 h5 span  {
+    font-weight: bold;
+    font-size: 40px;
+}
+ .sidebar ul li a{
+    padding-top: 10px;
+    color: var(--gray);
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+}
+.col-6{flex: 0 0 70%;}
+.col-3 {flex: 0 0 30%;}
+.col-2{flex: 0 0 50%;}
+.col-2 .box1{
+    margin: 5px;
+    background-color: white;
+    padding: 30px;
+    height: 400px;
+}
+h3{color: var(--black);}
+p{color: var(--gray);}
+h4{color: var(--gray-dark);}
+.row .col-3 .box1 a p {margin: 5px;}
+.row .col-3  h5  {
+    font-weight: 200;
+    line-height: 20px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin: 20px 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid darkgray;
+}
+.row .col-3 ul a {
+    display: block;
+    padding:8px;
+    color: var(--gray);
+}
+.row .col-3 .fa{padding-right: 8px;}
+.row .col-3 .box , .row .col-3 .content{ margin: 25px;}
+.row .col-3 .box {  
+    display: flex;
+    flex-wrap: wrap;
+}
+.row .col-3 .box span {
+    background-color: var(--teal);
+    color: white;
+    margin: 5px;
+    padding: 2px;
+}
+.row .col-3 .box span:hover {background-color: var(--gray-dark);}
+.row .col-3 .content{display: flex;}
+h3  {color: black;}
+h4{color: var(--gray-dark);}
+.row .col-3 .content .about {
+    margin: 10px;
+    padding-top: 15px;
+}
+/*******ring******/
+.color{
+    height: 50px;
+    position: fixed;
+    right: 200px;
+    z-index: 5;
+   top: 180px;
+   margin-right: 3px; 
+   transition: all 500ms ease-in-out;
+}
+.color  .ring-rotate  i {
+    animation: ring 3s infinite linear;
+}
+.color .fa {
+    border-radius: 50%;
+    background-color: var(--teal);
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes ring {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}
+/********color-box****/
+.color-box{
+    height: 150px;
+    background-color: white;
+    color: white;
+    position: fixed;
+    right: 0;
+    z-index: 5;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    top: 180px;
+    border:  1px solid aqua;
+    display: block;
+    transition: all 500ms ease-in-out;
+}
+.color-box .change-color{
+    background-color: aqua;
+    padding: 10px;
+    margin: 0;
+}
+.color-box .colors a {
+    display: inline-block;
+    align-items: center;
+    height: 50px;
+    width: 40px;
+    margin: 5px;
+    padding: 20px;
+}
+#color1 { background: #17a2b8;}
+#color2 { background: #20c997;}
+#color3 {
+    background: aqua;
+    margin: 5px;
+}
+/**************footer***********/
+footer{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: darkgray;
+    top:1400px;
+    text-align: center;
+    width: 100%;
+}
+footer .boxx{
+    flex: 0 0 100%;
+    padding: 10px;
+}
+@media (min-width:500px) and (max-width:767px){
+    .container {
+        position: relative;
+        width: 100%;
+        margin: auto;
+    }
+    header{ padding: 2px 0;}
+    header .navigation  {
+        display: block;
+        font-weight: bold;
+        font-size: 14px;
+       
+    }
+     .navigation .col-3{flex: 0 0 30%;}
+    header .navigation .col-3 h5   {
+        font-weight: 100;
+        font-size: 30px;
+    }
+    header .navigation .col-3 h5 span   {
+        font-weight: bold;
+        font-size: 30px;
+    }
+    header .navigation ul{z-index: 1; display: none;}
+    header .navigation ul li  {
+       padding-left:20px; 
+       position: relative;
+       padding: 5px;
+       
+    }
+    
+    header .navigation ul .dropdown .dropdown-menu    {
+       display: none;
+       z-index: 9999;
+    }
+    header .navigation ul ul {padding-left: 60px;}
+    header .navigation #menu{display: none;
+        transition: all 500ms ease-in-out;
+    }
+    header .navigation .mobile-icon {display: block;}
+    .sidebar{
+        background-color: darkgray;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    .Rightsidebar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .Rightsidebar ,.sidebar ul {justify-content: center;} 
+    .col-5 , .col-6 , .col-2 , .col-3{  flex: 0 0 100%;}
+    .sidebar .col-5 h5{text-align: center;}
+    .row{  
+        flex-direction: column;
+       height: auto;
+    }
+    footer{
+        position: relative;
+        top: 0;
+    }
+}
+@media (min-width:767px) and (max-width:1000px){
+    .container {
+        position: relative;
+        width: 100%;
+        margin: auto;
+    }
+    header .navigation  {
+        display: block;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .navigation .col-3{flex: 0 0 30%;}
+    header .navigation .col-3 h5   {
+        font-weight: 100;
+        font-size: 30px;
+    }
+    header .navigation .col-3 h5 span   {
+        font-weight: bold;
+        font-size: 30px;
+    }
+    header .navigation ul li  {
+       padding-left:20px; 
+       position: relative;
+       padding: 5px;
+    }
+    header .navigation ul ul {padding-left: 50px;}
+    header .navigation #menu{ display: none;
+        transition: all 500ms ease-in-out;}
+    header .navigation .mobile-icon { display: block;
+        transition: all 500ms ease-in-out;}
+    .col-5{flex: 0 0 50%;}
+    .sidebar ul{
+       margin-right: 30px;
+       margin-top: 12px;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+       height: auto;
+    }
+    .col-6{flex: 0 0 70%;}
+    .col-3 {flex: 0 0 30%;}
+    .col-2{flex: 0 0 100%;}
+    footer{
+        position: relative;
+        top: 0;
+    }
+}
+
